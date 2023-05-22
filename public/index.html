@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Räuber- & Beutepopulation</title>
+
+	<link rel="stylesheet" href="index.css">
+	<script type="text/javascript" src="index.js" defer></script>
+</head>
+
+<body>
+	<!-- Wiedergabe-Steuerung -->
+	<nav>
+		<button onclick="load(-1)">⏪</button>
+		<button id="play" onclick="play()">▶️</button>
+		<button onclick="load(1)">⏩</button>
+	</nav>
+
+	<!-- Angezeigtes Spielbrett -->
+	<canvas width="200" height="200"></canvas>
+
+	<!-- Simulationsausgabe -->
+	<code><b>Ausgabe:</b></code>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Wiedergabe-Steuerung */
+nav {
+	flex-basis: calc(calc(100vw - 100vh) / 2);
+	display: flex;
+	padding: 1vh;
+}
+
+@media (max-width: 100vh) {
+	nav {
+		flex-grow: 1;
+	}
+}
+
+button {
+	flex-grow: 1;
+	max-height: 2em;
+	border: none;
+	border-radius: 0.5em;
+}
+
+#play {
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+
+/* Angezeigtes Spielbrett */
+canvas {
+	background: #c0d470;
+	image-rendering: pixelated;
+	width: 100vh;
+	height: 100vh;
+}
+
+/* Simulationsausgabe */
+code {
+	flex-grow: 1;
+	padding: 1vh;
+}
+
+/* Farbschema für den dunklen Modus */
+@media (prefers-color-scheme: dark) {
+	body {
+		background: black;
+	}
+
+	button {
+		background: lightslategray;
+	}
+
+	canvas {
+		background: #a4c263;
+	}
+
+	code {
+		color: white;
+	}
+}
