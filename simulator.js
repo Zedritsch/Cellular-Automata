@@ -76,7 +76,7 @@ function save(path) {
 
 // Wählt unter der gegebenen Wahrscheinlichkeit zufällig einen Wert
 function rand(percent) {
-	return Math.floor(Math.random() * 100) <= percent;
+	return Math.floor(Math.random() * 100) < percent;
 }
 
 // Iteriert durch alle Felder unter der gegebenen Funktion
